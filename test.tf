@@ -5,5 +5,5 @@ resource "tfe_workspace" "test_workspace" {
   working_directory = "terraform/test_workspace"
 
   # renovate
-  terraform_version = "1.0.2"
+  terraform_version = "1.0.9"
 }

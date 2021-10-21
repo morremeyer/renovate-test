@@ -9,7 +9,7 @@
       "datasourceTemplate": "github-tags",
       "extractVersionTemplate": "v(?<version>.*)$",
       "matchStrings": [
-        "renovate\\s+terraform_version\\s+=\\s+\"(?<currentValue>.*)\""
+        "renovate\\s+terraform_version\\s+=\\s\"(?<currentValue>.*)\""
       ]
     }
   ]

@@ -7,7 +7,7 @@
       ],
       "depNameTemplate": "hashicorp/terraform",
       "datasourceTemplate": "github-tags",
-      "extractVersion": "v(?<version>.*)$",
+      "extractVersionTemplate": "v(?<version>.*)$",
       "matchStrings": [
         "renovate\\sterraform_version\\s+=\\s+\"(?<currentValue>.*)\""
       ]

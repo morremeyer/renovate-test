@@ -4,5 +4,6 @@ resource "tfe_workspace" "test_workspace" {
   execution_mode    = "local"
   working_directory = "terraform/test_workspace"
 
+  # renovate
   terraform_version = "1.0.2"
 }

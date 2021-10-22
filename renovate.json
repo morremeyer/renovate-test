@@ -1,5 +1,9 @@
 {
-  "extends": ["github>anaconda/renovate-config"],
+  "extends": [
+    "config:base",
+    ":disableRateLimiting"
+  ],
+  "recreateClosed": true,
   "regexManagers": [
     {
       "fileMatch": [
@@ -11,6 +15,13 @@
       "matchStrings": [
         "renovate\\s+terraform_version\\s+=\\s\"(?<currentValue>.*)\""
       ]
+    }
+  ],
+  "packageRules": [
+    {
+      "matchPackageNames": "hashicorp/terraform",
+      "matchManagers": "regex",
+      "groupName": "terraform version (terraform cloud)"
     }
   ]
 }

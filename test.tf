@@ -9,5 +9,19 @@ resource "tfe_workspace" "test_workspace" {
 }
 
 terraform {
+  required_providers {
+    tfe = {
+      source  = "hashicorp/tfe"
+      version = "0.26.1"
+    }
+    vault = {
+      source  = "hashicorp/vault"
+      version = "2.24.1"
+    }
+  }
   required_version = "1.0.2"
+}
+
+provider "vault" {
+  address = var.vault_address
 }

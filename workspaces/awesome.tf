@@ -3,5 +3,5 @@ resource "tfe_workspace" "awesome" {
   organization      = "morremeyer"
 
   # renovate
-  terraform_version = "1.0.6"
+  terraform_version = "1.0.9"
 }

@@ -21,7 +21,8 @@
     {
       "matchPackageNames": "hashicorp/terraform",
       "matchManagers": "regex",
-      "groupName": "hashicorp-terraform-cloud-workspace"
+      "groupName": "hashicorp-terraform-cloud-workspace",
+      "commitMessageSuffix": "for terraform cloud"
     }
   ]
 }

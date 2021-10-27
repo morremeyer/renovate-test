@@ -21,8 +21,12 @@
     {
       "matchPackageNames": "hashicorp/terraform",
       "matchManagers": "regex",
-      "groupName": "hashicorp-terraform-cloud-workspace",
-      "commitMessageSuffix": "for terraform cloud"
+      "additionalBranchPrefix": "{{ packageFile }}-"
+    },
+    {
+      "matchPackageNames": "hashicorp/terraform",
+      "matchManagers": "terraform",
+      "additionalBranchPrefix": "{{ parentDir }}-"
     }
   ]
 }

@@ -21,7 +21,8 @@
     {
       "matchPackageNames": "hashicorp/terraform",
       "matchManagers": "regex",
-      "additionalBranchPrefix": "{{ packageFile }}-"
+      "additionalBranchPrefix": "{{ packageFile }}-",
+      "commitMessageSuffix": "for terraform cloud"
     },
     {
       "matchPackageNames": "hashicorp/terraform",

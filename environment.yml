@@ -2,18 +2,15 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  # click has 7.1.1, 7.1.2, 8.0.[0-1,3-4] in main/click
   - click=7.1
-  # dask is 2022.7.0 in main/dask
   - dask
-  # distributed is 2022.7.0 in main/distributed
   - distributed==2022.5.0
-  # pip 22.1.2 is up to date in main/pip
-  - pip==22.1.2
-  # These are parsing tests
+  - notpip==22.1.2
   - test-minor=17.1
   - foo[subdir=linux-64,version='>=1.0']
   - foo==1.0=py27_0
+  - pip==22.1.2
+  - pip==1.1.1
   - conda-forge::foo==2.7.1[build=py2*]
   - conda-forge/testdir::foo==2.7.1[build=py2*]
   - conda-forge::foo==2.7.1

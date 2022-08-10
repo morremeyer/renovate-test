@@ -4,6 +4,8 @@ channels:
 dependencies:
   - click=7.1
   - dask
+  - somepackage==22.1.2
+  - other==42.0.0
   - distributed==2022.5.0
   - notpip==22.1.2
   - test-minor=17.1

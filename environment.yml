@@ -10,7 +10,6 @@ dependencies:
   - distributed==2022.5.0
   # pip 22.1.2 is up to date in main/pip
   - pip==22.1.2
-
   # These are parsing tests
   - test-minor=17.1
   - foo[subdir=linux-64,version='>=1.0']

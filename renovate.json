@@ -3,33 +3,5 @@
     "config:base",
     ":disableRateLimiting"
   ],
-  "recreateClosed": true,
-  "regexManagers": [
-    {
-      "fileMatch": [
-        "\\.tf$"
-      ],
-      "depNameTemplate": "hashicorp/terraform",
-      "datasourceTemplate": "github-tags",
-      "extractVersionTemplate": "v(?<version>.*)$",
-      "matchStrings": [
-        "renovate\\s+terraform_version\\s+=\\s\"(?<currentValue>.*)\""
-      ]
-    }
-  ],
-  "packageRules": [
-    {
-      "description": "Separate terraform cloud workspace version updates by file to not block all workspaces at once",
-      "matchPackageNames": "hashicorp/terraform",
-      "matchManagers": "regex",
-      "additionalBranchPrefix": "{{ packageFile }}-",
-      "commitMessageSuffix": "for terraform cloud"
-    },
-    {
-      "description": "Separate terraform version updates by module to enable upgrading them one by one",
-      "matchPackageNames": "hashicorp/terraform",
-      "matchManagers": "terraform",
-      "additionalBranchPrefix": "{{ parentDir }}-"
-    }
-  ]
+  "recreateClosed": true
 }

@@ -11,8 +11,8 @@ dependencies:
   - test-minor=17.1
   - foo[subdir=linux-64,version='>=1.0']
   - foo==1.0=py27_0
-  - pip==22.1.2
-  - pip==1.1.1
+  - pip==22.2.2
+  - pip==22.2.2
   - conda-forge::foo==2.7.1[build=py2*]
   - conda-forge/testdir::foo==2.7.1[build=py2*]
   - conda-forge::foo==2.7.1

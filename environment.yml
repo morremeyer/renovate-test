@@ -1,19 +1,15 @@
 channels:
   - conda-forge
-  - defaults
+  - mmeyer
 dependencies:
   - click=7.1
   - dask
-  - somepackage==22.1.2
-  - other==42.0.0
   - distributed==2022.5.0
-  - notpip==22.1.2
-  - test-minor=17.1
   - foo[subdir=linux-64,version='>=1.0']
   - foo==1.0=py27_0
-  - pip==22.1.2
-  - pip==1.1.1
   - conda-forge::foo==2.7.1[build=py2*]
   - conda-forge/testdir::foo==2.7.1[build=py2*]
   - conda-forge::foo==2.7.1
-  - test==2.7.1
+  - pip:
+      - certificates
+      - pytest 

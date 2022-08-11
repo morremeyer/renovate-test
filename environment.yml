@@ -3,6 +3,8 @@ channels:
   - mmeyer
 dependencies:
   - click=7.1
+  - django=4.0
+  - django-extensions=1!3.1.7
   - dask
   - distributed==2022.5.0
   - foo[subdir=linux-64,version='>=1.0']

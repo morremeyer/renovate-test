@@ -4,4 +4,7 @@
     ":disableRateLimiting"
   ],
   "recreateClosed": true
+  "conda": {
+    "enabled": true,
+  } 
 }

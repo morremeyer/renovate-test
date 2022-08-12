@@ -3,8 +3,8 @@
     "config:base",
     ":disableRateLimiting"
   ],
-  "recreateClosed": true
+  "recreateClosed": true,
   "conda": {
-    "enabled": true,
+    "enabled": true
   } 
 }

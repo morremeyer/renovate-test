@@ -9,7 +9,7 @@ dependencies:
   - dask
   - distributed==2022.5.0
   - foo[subdir=linux-64,version='>=1.0']
-  - pytest==6.2.2
+  - pytest==6.2.5
   - pip:
       - certificates
       - pytest 

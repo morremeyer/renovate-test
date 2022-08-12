@@ -1,6 +1,7 @@
 channels:
+  - nodefaults
+  - main
   - conda-forge
-  - mmeyer
 dependencies:
   - click=7.1
   - django=4.0

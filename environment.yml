@@ -1,6 +1,4 @@
 channels:
-  - nodefaults
-  - main
   - conda-forge
 dependencies:
   - click=7.1
